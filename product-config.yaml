@@ -1,5 +1,5 @@
 ACM:
-  blocker: "project = 'ACM' AND issuetype = Bug  AND status not in (Closed, CLOSED:WONTFIX, 'Closed by Eng', Cancelled) AND priority = Blocker AND component != 'QE' updated"
+  blocker: "project = 'ACM' AND issuetype = Bug  AND status not in (Closed, CLOSED:WONTFIX, 'Closed by Eng', Cancelled) AND priority = Blocker AND component != 'QE'"
   critical-blocker: "project = 'ACM' AND issuetype = Bug  AND status not in (Closed, CLOSED:WONTFIX, 'Closed by Eng', Cancelled) AND (Severity in (Critical, Important, Moderate) OR priority = Blocker) AND component != 'QE'"
 
 HMS:
