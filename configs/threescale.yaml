@@ -1,0 +1,2 @@
+THREESCALE:
+  blocker: "project = 'THREESCALE' and issuetype = Bug  AND status != Closed AND priority = Blocker"
