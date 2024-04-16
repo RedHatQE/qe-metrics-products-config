@@ -1,0 +1,3 @@
+HMS:
+  blocker: "project ='HMS' AND type = Bug AND resolution = Unresolved  AND ((priority = 'Blocker') OR (severity in ('Critical','Blocker') AND Blocked = 'True' ))"
+  critical-blocker: "project ='HMS' AND type = Bug AND resolution = Unresolved  AND  (priority = 'Critical' AND  (severity in( 'Critical', 'Blocker') AND Blocked = 'True' ))"

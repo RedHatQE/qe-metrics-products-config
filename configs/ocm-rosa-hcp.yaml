@@ -1,0 +1,3 @@
+OCM-ROSA-HCP:
+  blocker: "project = 'OCM' AND ( (labels  = TestBlocker AND type = Bug and Status not in (Closed,Verified)) )  AND component ='rosa-hcp'"
+  critical-blocker: "project = 'OCM' AND type = Bug and Status not in (Closed,Verified) AND ((labels  = release-blocker ) or (priority = Blocker)) AND component ='rosa-hcp'"

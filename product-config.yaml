@@ -1,30 +1,9 @@
-ACM:
-  blocker: "project = 'ACM' AND issuetype = Bug  AND status not in (Closed, CLOSED:WONTFIX, 'Closed by Eng', Cancelled) AND priority = Blocker AND component != 'QE'"
-  critical-blocker: "project = 'ACM' AND issuetype = Bug  AND status not in (Closed, CLOSED:WONTFIX, 'Closed by Eng', Cancelled) AND (Severity in (Critical, Important, Moderate) OR priority = Blocker) AND component != 'QE'"
-
-HMS:
-  blocker: "project ='HMS' AND type = Bug AND resolution = Unresolved  AND ((priority = 'Blocker') OR (severity in ('Critical','Blocker') AND Blocked = 'True' ))"
-  critical-blocker: "project ='HMS' AND type = Bug AND resolution = Unresolved  AND  (priority = 'Critical' AND  (severity in( 'Critical', 'Blocker') AND Blocked = 'True' ))"
-
-OCM-ROSA:
-  blocker: "project = 'OCM' AND ( (labels  = TestBlocker AND type = Bug and Status not in (Closed,Verified)) )  AND component  ='rosa'"
-  critical-blocker: "project = 'OCM' AND type = Bug and Status not in (Closed,Verified) AND ((labels  = release-blocker ) or (priority = Blocker)) AND component  ='rosa'"
-
-OCM-ROSA-HCP:
-  blocker: "project = 'OCM' AND ( (labels  = TestBlocker AND type = Bug and Status not in (Closed,Verified)) )  AND component ='rosa-hcp'"
-  critical-blocker: "project = 'OCM' AND type = Bug and Status not in (Closed,Verified) AND ((labels  = release-blocker ) or (priority = Blocker)) AND component ='rosa-hcp'"
-
-OCM-OSD-GCP:
-  blocker: "project = 'OCM' AND ( (labels  = TestBlocker AND type = Bug and Status not in (Closed,Verified)) )  AND component = 'osd-gcp'"
-  critical-blocker: "project = 'OCM' AND type = Bug and Status not in (Closed,Verified) AND ((labels  = release-blocker ) or (priority = Blocker)) AND component = 'osd-gcp'"
-
-OCM-FM:
-  blocker: "project = 'OCM' AND ( (labels  = TestBlocker AND type = Bug and Status not in (Closed,Verified)) )  AND component= 'fleet-manager'"
-  critical-blocker: "project = 'OCM' AND type = Bug and Status not in (Closed,Verified) AND ((labels  = release-blocker ) or (priority = Blocker)) AND component = 'fleet-manager' "
-
-OCM-AM:
-  blocker: "project = 'OCM' AND ( (labels  = TestBlocker AND type = Bug and Status not in (Closed,Verified)) )  AND component= 'account-manager'"
-  critical-blocker: "project = 'OCM' AND type = Bug and Status not in (Closed,Verified) AND ((labels  = release-blocker ) or (priority = Blocker)) AND component= 'account-manager'"
-
-THREESCALE:
-  blocker: "project = 'THREESCALE' and issuetype = Bug  AND status != Closed AND priority = Blocker"
+configs:
+  - acm.yaml
+  - hms.yaml
+  - ocm-rosa.yaml
+  - ocm-rosa-hcp.yaml
+  - ocm-osd-gcp.yaml
+  - ocm-fm.yaml
+  - ocm-am.yaml
+  - threescale.yaml
