@@ -1,0 +1,9 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["pyaml-env", "pytest", "ipdb", "ipython"],
+      "groupName": "poetry-deps"
+    }
+  ]
+}

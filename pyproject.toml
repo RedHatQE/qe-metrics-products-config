@@ -1,3 +1,12 @@
+[tool.ruff]
+preview = true
+line-length = 120
+fix = true
+output-format = "grouped"
+
+[tool.ruff.format]
+exclude = [".git", ".venv", ".mypy_cache", ".tox", "__pycache__"]
+
 [tool.poetry]
 name = "qe-metrics-products-config"
 version = "0.1.0"
