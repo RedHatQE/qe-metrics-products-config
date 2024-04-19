@@ -1,0 +1,32 @@
+[tool.ruff]
+preview = true
+line-length = 120
+fix = true
+output-format = "grouped"
+
+[tool.ruff.format]
+exclude = [".git", ".venv", ".mypy_cache", ".tox", "__pycache__"]
+
+[tool.poetry]
+name = "qe-metrics-products-config"
+version = "0.1.0"
+description = "Config files for qe-metrics"
+authors = ["Meni Yakove <myakove@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.tests.dependencies]
+pyaml-env = "^1.2.1"
+pytest = "^8.1.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipdb = "^0.13.13"
+ipython = "^8.23.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
