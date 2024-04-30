@@ -1,0 +1,2 @@
+SRV:
+  critical-blocker: "project IN ('SRVOCF', 'SRVCLI', 'SRVCOM', 'SRVKE', 'SRVKS') AND issuetype = Bug AND priority = Blocker AND Status not in (Closed,'Release Pending')"

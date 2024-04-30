@@ -1,2 +1,0 @@
-SRVOCF:
-  critical-blocker: "project = 'SRVOCF' AND issuetype = Bug AND priority = Blocker AND Status not in (Closed,'Release Pending')"

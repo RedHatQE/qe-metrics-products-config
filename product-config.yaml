@@ -7,10 +7,6 @@ configs:
   - ocm-fm.yaml
   - ocm-am.yaml
   - ossm.yaml
-  - srvcli.yaml
-  - srvcom.yaml
-  - srvke.yaml
-  - srvks.yaml
-  - srvocf.yaml
+  - srv.yaml
   - threescale.yaml
   - tracing.yaml
