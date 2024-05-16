@@ -1,0 +1,2 @@
+TRACING:
+  critical-blocker: "project = 'TRACING' AND issuetype = Bug AND status != Closed AND priority in (Blocker)"

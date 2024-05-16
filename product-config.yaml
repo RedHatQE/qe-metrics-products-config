@@ -6,4 +6,7 @@ configs:
   - ocm-osd-gcp.yaml
   - ocm-fm.yaml
   - ocm-am.yaml
+  - ossm.yaml
+  - srv.yaml
   - threescale.yaml
+  - tracing.yaml

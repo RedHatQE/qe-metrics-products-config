@@ -1,0 +1,2 @@
+OSSM:
+  critical-blocker: "project = 'OSSM' AND issuetype = Bug AND priority in (Blocker) AND resolution = Unresolved"
