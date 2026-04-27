@@ -20,7 +20,7 @@ python = "^3.11"
 
 [tool.poetry.group.tests.dependencies]
 pyaml-env = "^1.2.1"
-pytest = "^8.1.1"
+pytest = "^9.0.0"
 
 
 [tool.poetry.group.dev.dependencies]
